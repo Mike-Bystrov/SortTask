@@ -1,15 +1,7 @@
 package service;
 
-import repository.FileProcessorImpl;
-import util.CustomComparator;
-
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
 
-public class SortService {
-    public static void sortArray(ArrayList<String[]> arrayToSort) {
-        CustomComparator comparator = new CustomComparator();
-        arrayToSort.sort(comparator);
-    }
+public interface SortService {
+    void sortArray(ArrayList<String[]> arrayToSort);
 }
