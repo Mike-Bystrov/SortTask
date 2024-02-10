@@ -23,7 +23,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>Main</mainClass> <!-- Здесь указывается ваш главный класс -->
+                            <mainClass>Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
