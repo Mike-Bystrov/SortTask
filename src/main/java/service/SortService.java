@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public class SortService {
-    public void sortArray(ArrayList<String[]> arrayToSort) {
+    public static void sortArray(ArrayList<String[]> arrayToSort) {
         CustomComparator comparator = new CustomComparator();
         arrayToSort.sort(comparator);
     }

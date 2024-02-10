@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 public class FileProcessorImpl implements FileProcessor {
 
+    PrintWriter printWriter;
     @Override
     public ArrayList<String[]> readArrayFromFile(String path) {
         ArrayList<String[]> arrayList = new ArrayList<>();
@@ -24,9 +25,9 @@ public class FileProcessorImpl implements FileProcessor {
     }
 
     @Override
-    public void writeInfo(ArrayList<String[]> info) {
+    public void writeInfo(ArrayList<String[]> info, String path) {
         try {
-            PrintWriter printWriter = new PrintWriter("out.txt");
+            printWriter = new PrintWriter(path);
 
             for (String[] el: info) {
                 printWriter.println(Arrays.toString(el));
