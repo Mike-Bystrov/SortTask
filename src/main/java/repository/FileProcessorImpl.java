@@ -18,8 +18,7 @@ public class FileProcessorImpl implements FileProcessor {
                 arrayList.add(sc.nextLine().split("\t"));
             }
         } catch (FileNotFoundException e) {
-            //TODO logi
-            System.out.println("проверьте папку с исходниками");
+            System.out.println("check directory with sources");
         }
         return arrayList;
     }
@@ -34,7 +33,7 @@ public class FileProcessorImpl implements FileProcessor {
             }
             printWriter.close();
         } catch (IOException e) {
-            System.out.println("sad((");
+            System.out.println("check output file");
         }
     }
 }
