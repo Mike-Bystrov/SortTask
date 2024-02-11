@@ -14,6 +14,7 @@ public class FileProcessorImpl implements FileProcessor {
 
         try {
             Scanner sc = new Scanner(new File("in.txt"));
+
             while (sc.hasNextLine()) {
                 arrayList.add(sc.nextLine().split("\t"));
             }
