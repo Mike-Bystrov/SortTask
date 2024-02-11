@@ -31,6 +31,7 @@ public class FileProcessorImpl implements FileProcessor {
             for (String[] el: info) {
                 printWriter.println(Arrays.toString(el));
             }
+
             printWriter.close();
         } catch (IOException e) {
             System.out.println("check output file");
