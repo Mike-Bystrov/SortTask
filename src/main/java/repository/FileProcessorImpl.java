@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class FileProcessorImpl implements FileProcessor {
 
     PrintWriter printWriter;
+
     @Override
     public ArrayList<String[]> readArrayFromFile(String path) {
         ArrayList<String[]> arrayList = new ArrayList<>();

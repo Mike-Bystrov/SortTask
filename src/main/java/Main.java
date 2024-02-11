@@ -9,6 +9,7 @@ public class Main {
         SortServiceImpl service = new SortServiceImpl();
 
         ArrayList<String[]> arr = fileProcessor.readArrayFromFile("in.txt");
+
         service.sortArray(arr);
         fileProcessor.writeInfo(arr, "out.txt");
     }
